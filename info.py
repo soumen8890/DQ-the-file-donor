@@ -21,7 +21,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = is_enabled((environ.get('USE_CAPTION_FILTER', 'True')), True)
 
-PICS = (environ.get('PICS', 'https://graph.org/file/94daf2855c5ddd6af9b44-5623a33b92fae8bfb3.jpg')).split()
+PICS = (environ.get('PICS', 'https://graph.org/file/e4418a686e165ff3c049f-1a516a22e2db3ff2e2.jpg https://graph.org/file/45efa2f04029072801934-8d8f16cbac5bcb9eef.jpg https://graph.org/file/888894a49dd8530f4c860-40ec9c223056cdf8ce.jpg https://graph.org/file/2cf9be106083c1ba54718-eac1fa3c96ea48cfef.jpg https://graph.org/file/a157afd6a113ce93a5684-573706cc66e6001967.jpg https://graph.org/file/1753c642c09143ae11206-f9dbf0fc9ecf977d63.jpg https://graph.org/file/6363d1ce83908f25d94b2-69ab023dadd71ecc1b.jpg')).split()
 NOR_IMG = environ.get("NOR_IMG", "https://telegra.ph/file/46443096bc6895c74a716.jpg")
 MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/451f038b4e7c2ddd10dc0.mp4")
 SPELL_IMG = environ.get("SPELL_IMG", "https://telegra.ph/file/5e2d4418525832bc9a1b9.jpg")
@@ -42,7 +42,7 @@ SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(
 NO_RESULTS_MSG = is_enabled((environ.get("NO_RESULTS_MSG", 'False')), False)
 
 # MongoDB information
-SECONDDB_URI = environ.get('SECONDDB_URI', None)
+SECONDDB_URI = environ.get('SECONDDB_URI', "mongodb+srv://loheda1869:biui1nVXUtJhj2UJ@cluster0.dax5m4o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://basag89756:k6Pfy4nAR8fCy6fm@cluster0.swjll5i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Rajappan")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
@@ -62,7 +62,7 @@ PORT = environ.get("PORT", "8080")
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/moviemashala89')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/movieguru9980')
 MSG_ALRT = environ.get('MSG_ALRT', 'Wʜᴀᴛ Aʀᴇ Yᴏᴜ Lᴏᴏᴋɪɴɢ Aᴛ ?')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', 0))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001954153980'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'DQ_The_File_Donor_Support')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
